@@ -1,3 +1,233 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  background:url(background.jpg) no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	/*background-size: 100% 100%;*/
+ 	background-size: cover;
+height: 100vh;
+ 
+ 	
+}#myform {
+  padding:80px;
+  margin-left: 50%;
+  background-color: white;
+  width:290px;
+  justify-content: center;
+  margin-top:100px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  
+}
+input[type="email"], input[type="password"], .firname, .surname{
+ border: 1px solid white;
+ background-color: transparent;
+ border-bottom: 1px solid rgb(75,83,32);
+font-family:'Roboto', sans-serif;
+ padding:5px;
+ width: 110px;
+letter-spacing: 1px;
+}
+
+.surname{
+margin-left:5px;
+}
+input[type="email"], input[type="password"] {
+	width: 250px;
+}
+span {
+  display:inline-block;
+  font-size:15px;
+  margin-top:20px;
+padding-bottom:10px;
+  font-family:'Roboto', sans-serif;
+  color:rgb(75,83,32);
+  font-weight:normal;
+  text-transform: uppercase;
+}
+.button {
+   padding:6px;
+  width:120px;
+  background-color:rgb(75,83,32);
+  border: 1px solid rgb(75,83,32);
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-left: 80px;
+margin-top:10px;
+  box-shadow: 0 0 5px rgba(0,0,0,2);
+  border-radius: 20px;
+outline: none;
+  cursor: pointer;
+}
+.button:hover {
+	background-color: rgb(165,115,213);
+}
+.reg {
+  display:inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+  font-family:'Roboto', sans-serif;
+  color:rgb(75,83,32);
+  font-weight: bold;
+  margin-left: 10px;
+margin-top:20px;
+
+}
+.reg:hover {
+	color: rgb(165,115,213);
+}
+
+.have {
+	margin-left:40px;
+}
+.use{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  display: inline-block;
+  bottom:1px;
+margin-top:20px;
+}
+
+input[type="checkbox"] {
+	margin-right:3px;
+} 
+::placeholder {
+  color:grey;
+  opacity: 1;
+}
+
+.modal {
+  /*position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;*/
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.5);
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  /*opacity: 5;*/
+
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+
+  /*background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;*/
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgrey;
+  
+  /*color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bolder;*/
+}
+
+.close-button:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+.close-button2 {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgrey;
+  
+  /*color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bolder;*/
+}
+.close-button2:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+	#myform {
+		margin-left:auto;
+		margin-right: auto;
+		width: 290px;
+		padding:40px;
+		margin-top: 10px;
+	}
+.firname, .surname{
+	width: 110px;
+}
+	
+span {
+
+  font-size:13px;
+padding-top:10px;
+padding-bottom:10px;
+
+}
+input[type="email"], input[type="password"]{
+
+ width: 250px;
+}
+.button {
+  padding:5px;
+  font-size: 18px;
+  margin-left: 80px;
+  width: 100px;
+ 
+}
+.reg {
+  font-size: 14px;
+  color:rgb(75,83,32);
+  font-weight: bold;
+  left:5px;
+}
+
+p {
+	font-size: 14px;
+}
+
+}
 *{
   margin:0;
   padding:0;
