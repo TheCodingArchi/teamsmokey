@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,37 +11,7 @@
   
 <body>
 
-  <div id="myform">
-  <form action="#" id="valid_psswd" onsubmit="validate();">
-   <p> <span>Full Name</span> <br>
-    <input class="firname" type="text" placeholder="First Name" id="fir_name" required><input class="surname" type="text" placeholder="Surname"id="sur_name" required><br> <br></p>
-    <p><span>Email</span> <br>
-    <input class="email" type="email" placeholder="Enter email" required><br></p>
-    <p><span>Password</span> <br>
-    <input class="password" type="password" id="psswd" placeholder="Enter password" required><br></p>
-    <p><span>Confirm password</span> <br>
-    <input class="conpassword" type="password" id="conf_psswd" placeholder="Password" required><br></p>
-    
-    <p class="use"><input type="checkbox">I accept the Terms of Use & Privacy Policy</p>.
-    <button class="button">SIGN UP</button><br>
-    <p class="have">Already have an account?<a href="index.html" class="reg">Login</a></p> 
-  </form>
-  </div>
-  <script type="text/javascript" src="smokey.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="teamsmokeysignup.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <title>Signup page</title>
-</head>
-<body>
-  <div id="mymodal" class="modal">
+<div id="mymodal" class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
       <h1>The Firstname, Surname, and Password must exceed 4 characters</h1>
@@ -54,39 +23,27 @@
       <h1>Congratulations. You can now <a href="index.html">login</a> with your details</h1>
     </div>
   </div>
-  <script type="text/javascript">
-    //script-of-verificate-password 
-    function validate() {
-   var a = document.getElementById("psswd").value;
-   var b = document.getElementById("conf_psswd").value;
-   if (a!=b) {
-    alert("passwords do not match.");
-    }
-   else {
-     alert("Your information has been taken into account.(Back-end Guys read my js code)");
 
-     //Back-end can redirect the link to login page after collect the information
-     //document.valid_psswd.submit();
-  }
-}
-  </script>
-</head>
-<body>
-  <div id="form1">
-  <form action="#" id="valid_psswd" onsubmit="validate();">
-    <span>Full Name</span> <br>
-    <input class="firname" type="text" placeholder="First Name" id="fir_name" required><input class="surname" type="text" placeholder="Surname"id="sur_name" required><br> <br>
-    <span>Email</span> <br>
-    <input class="email" type="email" placeholder="Enter email" required><br> <br> 
-    <span>Password</span> <br>
-    <input class="password" type="password" id="psswd" placeholder="Enter password" required><br> <br>
-    <span>Confirm password</span> <br>
-    <input class="conpassword" type="password" id="conf_psswd" placeholder="Confirm your Password" required><br> <br> <br> <br>
-    <input type="checkbox"><p class="use">I accept the Terms of Use & Privacy Policy</p>.
-    <button class="button">SIGN UP</button><br>
-    <p class="have">Already have an account?</p> <a href="index.html" class="reg">Login</a>
-  </form>
+  <div id="myform">
+    <form action="#" id="valid_psswd"  onsubmit ="validate()">
+       <p> <span>Full Name</span> <br>
+        <input class="firname" type="text" placeholder="First Name" id="fir_name" required><input class="surname" type="text" placeholder="Surname"id="sur_name" required><br> <br></p>
+        <p><span>Email</span> <br>
+        <input class="email" type="email" placeholder="Enter email" required><br></p>
+        <p><span>Password</span> <br>
+        <input class="password" type="password" id="psswd" placeholder="Enter password" required><br></p>
+        <p><span>Confirm password</span> <br>
+        <input class="conpassword" type="password" id="conf_psswd" placeholder="Password" required><br></p>
+        
+        <p class="use"><input type="checkbox" required>I accept the Terms of Use & Privacy Policy</p>.
+        <button class="button">SIGN UP</button><br>
+        <p class="have">Already have an account?<a href="index.html" class="reg">Login</a></p> 
+    </form>
   </div>
+
+
+
+
   <script type="text/javascript" src="smokey.js"></script>
 </body>
 </html>

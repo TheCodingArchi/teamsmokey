@@ -10,6 +10,7 @@
  var modalss2 = document.getElementById('mymodal2');
  var span = document.getElementsByClassName('close-button')[0];
  var span2 = document.getElementsByClassName('close-button2')[0];
+ var checkBox = document.getElementsByClassName('use')[0];
 
 function clearInputs() {
   input.value="";
@@ -19,6 +20,12 @@ function clearInputs() {
   input5.value="";
 }
 
+// function check() {
+//   if (checkBox.addEventListener('click', function() {
+//     alert('hello')
+//   })
+// }
+// check();
 function verifyName() {
   return input.value.length;
 }
