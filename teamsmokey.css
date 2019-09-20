@@ -1,63 +1,47 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing: content-box;
-}
+margin:0;
+padding:0;
+  }
 html {
-  height: 100%;
+  width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+background-position:40% 40%;
 }
-body{
+/*body{
   display:inline-block;
   position:relative;
   background-image:linear-gradient(200deg, rgb(138,43,226),rgb(63,224,208));
   background-repeat: no-repeat;
   height:900px;
-}
-#form1 {
-  position: relative;
-  display: block;
+}*/
+#myform {
+margin-left:50%;
+margin-top: 100px;
   padding:80px;
-  margin:20px;
   background-color:white;
   width:250px;
-  height:300px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   justify-content: center;
-  left:100%;
-  top:10%;
 }
-.email {
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom:20px;
-  width:250px;
-  font-family:'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
-}
-.password {
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom: 20px;
-  width:250px;
-  font-family:'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
+input[type="email"], input[type="password"] {
+ border: 1px solid white;
+ background-color: transparent;
+ border-bottom: 1px solid rgb(75,83,32);
+font-family:'Roboto', sans-serif;
+ padding:10px;
+ width: 250px;
+letter-spacing: 1px;
 }
 span {
-  position:relative;
-  display:block;
-  font-size:20px;
-  bottom:10px;
+display: inline-block;
+font-size:25px;
   font-family:'Roboto', sans-serif;
   color:rgb(75,83,32);
   font-weight: lighter;
+margin-top:10px;
 }
 .reg {
   display:inline-block;
@@ -67,38 +51,117 @@ span {
   font-family:'Roboto', sans-serif;
   color:rgb(75,83,32);
   font-weight: lighter;
-  top:20px;
-  left:29px;
+margin-left: 10px;
+margin-top: 20px;
 }
+
+.wrapper {
+  width: 30%;
+  margin: 100px auto;
+  padding: 0px 30px;
+  background: whitesmoke;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  line-height: 3rem;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+
+}
+
+.header{
+  width: auto;
+  margin: 0px;
+  padding: 0;
+  justify-content: center;
+  
+    
+}
+
+.logout {
+  text-decoration: none;
+  background: rgb(75,83,32);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.logout:hover{
+  background-color: rgb(165,115,213);
+}
+
 .forg{
   display:inline-block;
   position: relative;
   text-decoration: none;
   left:55%;
-  bottom:10px;
+  margin-top:20px;
   font-family:'Roboto', sans-serif;
   font-size: 14px;
   color:black;
 }
+
+.forg:hover {
+	color: rgb(165,115,213);
+}
 .btn {
-  display: inline-block;
-  position: relative;
-  padding:7px;
+   padding:7px;
   width:150px;
   background-color:rgb(75,83,32);
   border: 1px solid white;
   font-family:'Roboto', sans-serif;
   color:white;
   font-size: 15px;
-  left:20%;
+  margin-left: 50px;
+margin-top: 20px;
   border-radius: 5px;
-}
-p {
-  display:inline-block;
-  position: relative;
-  font-size: 15px;
-  font-family:'Roboto', sans-serif;
-  top:20px;
-  left:29px;
+outline: none;
+  cursor: pointer;
 }
 
+.btn:hover {
+	background-color: rgb(165,115,213);
+}
+
+@media only screen and (max-width: 600px){
+	#myform {
+		margin-left:auto;
+		margin-right: auto;
+		width: 250px;
+		padding:40px;
+		margin-top: 100px;
+		/*margin-right: auto;*/
+		/*margin-top: auto;
+		margin-bottom: auto;*/
+		/*text-align: center;*/
+		/*left: 25%;*/
+		/*bottom: auto;*/
+	}
+	input[type="email"], input[type="password"] {
+ border: 1px solid white;
+ background-color: transparent;
+ border-bottom: 1px solid rgb(75,83,32);
+ padding:5px;
+ width: 250px;
+}
+span {
+  font-size:20px;
+  }
+  .forg{
+  font-size: 12px;
+}
+
+.btn {
+	margin-left: 40px;
+}
+}
