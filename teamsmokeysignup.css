@@ -46,8 +46,6 @@ font-family:'Roboto', sans-serif;
 letter-spacing: 1px;
 }
 
-
-
 .surname{
 margin-left:5px;
 }
@@ -200,10 +198,6 @@ input[type="checkbox"] {
   background-color: darkgrey;
   cursor: pointer;
 }
-
-
-
-
 
 @media only screen and (max-width: 600px){
 	#myform {
