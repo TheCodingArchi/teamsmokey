@@ -2,111 +2,70 @@
   margin:0;
   padding:0;
 }
-body{
-  background:url("background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-#form1 {
-  display: block;  
-  position:relative;
+html{
+  background:url(background.jpg) no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	/*background-size: 100% 100%;*/
+ 	background-size: cover;
+height: 100vh;
+ 
+ 	
+}#myform {
   padding:80px;
-  margin-top:20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50%;
   background-color: white;
-  width:400px;
-  height:70vh;
+  width:290px;
   justify-content: center;
-  top:10%;
+  margin-top:100px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-  left:25%;
+  
 }
-.email {
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom:20px;
-  width:360px;
-  top:5px;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
+
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+
 }
-.password {
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom: 20px;
-  width:360px;
-  top:5px;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
+
+input[type="email"], input[type="password"], .firname, .surname{
+ border: 1px solid white;
+ background-color: transparent;
+ border-bottom: 1px solid rgb(75,83,32);
+font-family:'Roboto', sans-serif;
+ padding:5px;
+ width: 110px;
+letter-spacing: 1px;
 }
-.conpassword{
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom: 10px;
-  width:360px;
-  top:5px;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
+
+
+
+.surname{
+margin-left:5px;
 }
-.firname{
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom: 20px;
-  width:150px;
-  top:5px;
-  font-family:'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
-}
-.surname {
-  position:relative;
-  display:inline-block;
-  letter-spacing: 1px;
-  padding:10px;
-  bottom:20px;
-  top:5px;
-  width:150px;
-  left:10%;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid white;
-  background-color: transparent;
-  border-bottom: 1px solid rgb(75,83,32);
+input[type="email"], input[type="password"] {
+	width: 250px;
 }
 span {
-  position:relative;
-  display:block;
+  display:inline-block;
   font-size:15px;
-  bottom:10px;
-  top:25px;
+  margin-top:20px;
+padding-bottom:10px;
   font-family:'Roboto', sans-serif;
   color:rgb(75,83,32);
   font-weight:normal;
   text-transform: uppercase;
 }
 .button {
-  display: inline-block;
-  position: relative;
-  padding:6px;
+   padding:6px;
   width:120px;
   background-color:rgb(75,83,32);
   border: 1px solid rgb(75,83,32);
@@ -114,18 +73,15 @@ span {
   color:white;
   font-size: 18px;
   font-weight: lighter;
-  left:%;
-  top:40px;
+  margin-left: 80px;
+margin-top:10px;
   box-shadow: 0 0 5px rgba(0,0,0,2);
   border-radius: 20px;
+outline: none;
+  cursor: pointer;
 }
-.have{
- display:inline-block;
- position: relative;
- font-size: 15px;
- font-family:'Roboto', sans-serif;
- top:70px;
- left:70px;
+.button:hover {
+	background-color: rgb(165,115,213);
 }
 .reg {
   display:inline-block;
@@ -135,17 +91,29 @@ span {
   font-family:'Roboto', sans-serif;
   color:rgb(75,83,32);
   font-weight: bold;
-  top:70px;
-  left:70px;
+  margin-left: 10px;
+margin-top:20px;
+
+}
+.reg:hover {
+	color: rgb(165,115,213);
+}
+
+.have {
+	margin-left:40px;
 }
 .use{
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   position: relative;
   display: inline-block;
-  left:5px;
   bottom:1px;
+margin-top:20px;
 }
+
+input[type="checkbox"] {
+	margin-right:3px;
+} 
 ::placeholder {
   color:grey;
   opacity: 1;
@@ -231,4 +199,51 @@ span {
 .close-button2:hover {
   background-color: darkgrey;
   cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+	#myform {
+		margin-left:auto;
+		margin-right: auto;
+		width: 290px;
+		padding:40px;
+		margin-top: 10px;
+	}
+.firname, .surname{
+	width: 110px;
+}
+	
+span {
+
+  font-size:13px;
+padding-top:10px;
+padding-bottom:10px;
+
+}
+input[type="email"], input[type="password"]{
+
+ width: 250px;
+}
+.button {
+  padding:5px;
+  font-size: 18px;
+  margin-left: 80px;
+  width: 100px;
+ 
+}
+.reg {
+  font-size: 14px;
+  color:rgb(75,83,32);
+  font-weight: bold;
+  left:5px;
+}
+
+p {
+	font-size: 14px;
+}
+
 }
